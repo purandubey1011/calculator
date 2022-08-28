@@ -3,6 +3,8 @@ console.log('calculator logic');
 let buttons = document.querySelector('.buttons')
 let btn = document.querySelectorAll('span')
 let value = document.getElementById('value')
+let toggleBtn = document.querySelector('.toggleBtn')
+let body = document.querySelector('body')
 
 for(let i=0;i<btn.length;i++){
 
@@ -21,4 +23,8 @@ for(let i=0;i<btn.length;i++){
         }
 
     })
+
+    toggleBtn.onclick = function(){
+        body.classList.toggle('dark')
+    }
 }
